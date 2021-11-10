@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>page</title>
+    <link rel="stylesheet" href="/my page/style.css">
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+
+                <img src="/my page/logo.png" class="logo">
+                <nav>
+
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Wordpress</a></li>
+                        <% if( data.username){ %>
+                            <li>
+                                <a href="#">
+                                    <%= data.username  %>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/logout">
+                                    logout
+                                </a>
+                            </li>
+                            <% } else{ %>
+
+                                <li><a href="/signin">sign in</a></li>
+                                <li><a href="/signup">sign up</a></li>
+                                <% } %>
+
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="content">
+                <h1>MAKE <span>HTML</span> & <span>CSS</span> WEBSITE</h1>
+                <p>After that there will one title, small description and two buttons designed using HTML and CSS. Find used images from below link and make this web design by yourself.</p>
+                <div class="btn-box">
+                    <button type="button">Learn more</button>
+                    <button type="button" class="btn">Explore</button>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <img src="/my page/site-icon.png" class="logo-icon">
+        <div class="social">
+
+
+            <img src="/my page/fb.png">
+            <img src="/my page/ig.png">
+            <img src="/my page/tw.png">
+        </div>
+
+    </div>
+</body>
+
+</html>
